@@ -24,7 +24,7 @@ Page({
   // 获取导航
   async getNavList(){
     const res = await request({url:'/home/catitems'})
-    console.log(res);
+    // console.log(res);
     this.setData({
       navList:res.data.message
     })
@@ -33,7 +33,7 @@ Page({
   // 获取 楼层
   async getFloorList(){
     const res = await request({url:'/home/floordata'})
-    console.log(res);
+    // console.log(res);
     this.setData({
       floorList:res.data.message
     })
