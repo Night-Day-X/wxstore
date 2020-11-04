@@ -68,7 +68,7 @@ Page({
     // 触底
     onReachBottom(){
         if(this.QueryPaiams.pagenum>=this.allPages){
-            wx.showToast({title:'没有下一页数据了'})
+            wx.showToast({title:'抱歉~没有了'})
         }else{
             this.QueryPaiams.pagenum++
             this.getGoodList()
